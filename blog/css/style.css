@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+	background: #0033CC;
+}
+
+/*font-family: 'Poppins', sans-serif;*/
+
+.blog_wrap {
+	max-width: 350px;
+	width: 100%;
+	margin: 100px auto;
+}
+
+.blog_item {
+	position: relative;
+	background: #ffffff;
+	border-radius: 10px;
+}
+
+.blog_item .blog_img {
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.blog_item .blog_img img {
+	width: 100%;
+	transition: .3s;
+}
+
+.blog_item:hover .blog_img img {
+	transform: scale(1.1);
+}
+
+.blog_date {
+	position: absolute;
+	top: -10px;
+	left: 30px;
+	text-align: center;
+	background: #13a874;
+	border-radius: 0 5px 5px 5px;
+	min-width: 80px;
+}
+
+.blog_date::after {
+	top: 6px;
+	left: -14px;
+	z-index: -2;
+	content: "";
+	position: absolute;
+	border: 15px solid;
+	transform: rotate(45deg);
+	border-color: transparent transparent transparent #13a874;
+}
+
+.blog_day {
+	padding: 10px 15px;
+	display: block;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+
+.blog_month {
+	padding: 10px 20px;
+	display: block;
+	font-size: 14px;
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0 0 5px 5px;
+}
+
+.blog_item_inner {
+	padding: 30px;
+}
+
+.blog_title {
+	font-size: 22px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	text-decoration: none;
+}
+
+.blog_meta {
+	padding: 15px 0;
+}
+
+.blog_meta a {
+	font-size: 15px;
+	margin-right: 10px;
+	color: #636b72;
+	text-decoration: none;
+}
+
+.blog_meta a i {
+	color: #0033CC;
+	margin-right: 5px;
+}
+
+.blog_item_inner p {
+    font-size: 16px;
+    color: #636b72;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+
+.read_btn {
+	font-size: 14px;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: inline-block;
+	transition: .3s;
+	box-shadow: 0 5px 20px 0 rgba(19, 168, 116, 0.2);
+	background: #13a874;
+	text-decoration: none;
+}
+
+.read_btn i {
+	font-size: 14px;
+	margin-left: 7px;
+}
